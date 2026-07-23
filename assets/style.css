@@ -1,0 +1,72 @@
+:root {
+  --bg: #fbf9f4;
+  --panel: #ffffff;
+  --ink: #1a1a1c;
+  --ink-soft: #4a4a52;
+  --dim: #8a8a90;
+  --rule: #e6e2d8;
+  --accent: #1a63a3;
+  --accent-soft: #edf3f9;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+  font: 17px/1.65 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 680px; margin: 0 auto; padding: 48px 22px 100px; }
+
+.site-nav {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding-bottom: 24px; border-bottom: 1px solid var(--rule); margin-bottom: 44px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+}
+.site-nav .brand {
+  color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -0.01em;
+  font-size: 18px;
+}
+.site-nav a { color: var(--ink-soft); text-decoration: none; margin-left: 18px; }
+.site-nav a:hover { color: var(--accent); }
+
+h1 { font-size: 34px; line-height: 1.2; letter-spacing: -0.015em; margin: 0 0 12px; }
+h2 { font-size: 24px; line-height: 1.25; margin: 40px 0 10px; }
+h3 { font-size: 19px; margin: 28px 0 8px; }
+
+p, ul, ol { margin: 12px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+
+.subtitle { color: var(--ink-soft); font-size: 18px; margin: 0 0 32px; }
+.byline {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 13px; color: var(--dim); margin-bottom: 32px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.post-list { list-style: none; padding: 0; }
+.post-list li { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.post-list a { color: var(--ink); font-weight: 600; }
+.post-list a:hover { color: var(--accent); }
+.post-list .post-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 13px; color: var(--dim); margin-top: 4px;
+}
+
+.callout {
+  background: var(--accent-soft); border-left: 3px solid var(--accent);
+  padding: 14px 18px; margin: 24px 0; border-radius: 4px;
+  font-size: 15.5px;
+}
+
+footer {
+  margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--rule);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 13px; color: var(--dim);
+}
+
+code { background: #f0ede4; padding: 1px 5px; border-radius: 3px; font-size: 0.94em; }
